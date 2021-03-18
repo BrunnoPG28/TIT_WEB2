@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/img_sessao"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/secao1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/txt_sessao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Paradas"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@+id/img_sessao"
+        app:layout_constraintStart_toStartOf="@+id/img_sessao"
+        app:layout_constraintEnd_toEndOf="@id/img_sessao"
+        app:layout_constraintBottom_toBottomOf="@+id/img_sessao"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
